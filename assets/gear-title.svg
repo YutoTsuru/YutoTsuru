@@ -1,0 +1,45 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="gear">
+      <circle cx="400" cy="110" r="78" fill="#1a1a1a"/>
+      <circle cx="400" cy="110" r="62" fill="none" stroke="#8c7a55" stroke-width="6"/>
+
+      <g fill="#8c7a55">
+        <rect x="396" y="12" width="8" height="18"/>
+        <rect x="396" y="190" width="8" height="18"/>
+        <rect x="292" y="106" width="18" height="8"/>
+        <rect x="490" y="106" width="18" height="8"/>
+
+        <rect x="330" y="32" width="10" height="16" transform="rotate(-45 335 40)"/>
+        <rect x="460" y="32" width="10" height="16" transform="rotate(45 465 40)"/>
+        <rect x="330" y="172" width="10" height="16" transform="rotate(45 335 180)"/>
+        <rect x="460" y="172" width="10" height="16" transform="rotate(-45 465 180)"/>
+      </g>
+
+      <circle cx="400" cy="110" r="20" fill="#0a0a0a" stroke="#6e5a35" stroke-width="4"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="220" fill="#0a0a0a"/>
+
+  <use href="#gear">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 400 110"
+      to="360 400 110"
+      dur="18s"
+      repeatCount="indefinite"/>
+  </use>
+
+  <text
+    x="400"
+    y="132"
+    text-anchor="middle"
+    font-size="46"
+    font-family="monospace"
+    fill="#e0c48f"
+    letter-spacing="3">
+    YUTO TSURU
+  </text>
+</svg>
