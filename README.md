@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="./assets/gear-title.svg" />
+</p>
+
+Hi there 👋
+
 ## Hi there 👋
 
 <!--
