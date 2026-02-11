@@ -1,113 +1,80 @@
-<svg width="800" height="350" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="gear-precise-24" viewBox="-70 -70 140 140">
-      <path fill="url(#brass-bright)" stroke="#8c6d1f" stroke-width="0.5"
-            d="M60.0,0.0 L59.8,3.9 L64.2,7.7 L62.8,11.4 L56.6,13.6 L54.9,17.3 L57.7,23.4 L54.9,26.6 L47.7,25.4 L44.6,28.3 L45.9,34.9 L42.1,37.5 L34.6,33.4 L30.6,35.3 L30.2,41.9 L25.8,43.7 L18.9,37.3 L14.5,38.2 L12.4,44.5 L7.7,45.4 L2.3,38.3 L-2.3,38.3 L-7.7,45.4 L-12.4,44.5 L-14.5,38.2 L-18.9,37.3 L-25.8,43.7 L-30.2,41.9 L-30.6,35.3 L-34.6,33.4 L-42.1,37.5 L-45.9,34.9 L-44.6,28.3 L-47.7,25.4 L-54.9,26.6 L-57.7,23.4 L-54.9,17.3 L-56.6,13.6 L-62.8,11.4 L-64.2,7.7 L-59.8,3.9 L60.0,0.0 Z M 0,0 m -45,0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 Z" />
-      <g fill="none" stroke="#8c6d1f" stroke-width="8">
-        <circle r="30" />
-        <line x1="0" y1="-30" x2="0" y2="30" />
-        <line x1="-30" y1="0" x2="30" y2="0" />
+    <g id="gear">
+      <circle cx="400" cy="130" r="92" fill="none" stroke="#B08D2F" stroke-width="6"/>
+      <circle cx="400" cy="130" r="72" fill="none" stroke="#B08D2F" stroke-width="4"/>
+
+      <g fill="#B08D2F">
+        <rect x="396" y="10" width="8" height="20"/>
+        <rect x="396" y="230" width="8" height="20"/>
+        <rect x="276" y="126" width="20" height="8"/>
+        <rect x="504" y="126" width="20" height="8"/>
+        <rect x="330" y="32" width="10" height="20" transform="rotate(-45 335 42)"/>
+        <rect x="460" y="32" width="10" height="20" transform="rotate(45 465 42)"/>
+        <rect x="330" y="208" width="10" height="20" transform="rotate(45 335 218)"/>
+        <rect x="460" y="208" width="10" height="20" transform="rotate(-45 465 218)"/>
       </g>
-      <circle r="12" fill="url(#steel-blue)" stroke="#4a5d75" stroke-width="1" />
-    </symbol>
 
-    <symbol id="gear-precise-12" viewBox="-35 -35 70 70">
-      <path fill="url(#copper-bright)" stroke="#8c4a32" stroke-width="0.5"
-            d="M30.0,0.0 L29.5,7.9 L34.6,14.3 L30.0,21.8 L21.8,20.8 L14.3,25.9 L15.0,33.9 L7.5,38.1 L0.0,31.5 L-7.5,38.1 L-15.0,33.9 L-14.3,25.9 L-21.8,20.8 L-30.0,21.8 L-34.6,14.3 L-29.5,7.9 L-30.0,0.0 L-29.5,-7.9 L-34.6,-14.3 L-30.0,-21.8 L-21.8,-20.8 L-14.3,-25.9 L-15.0,-33.9 L-7.5,-38.1 L0.0,-31.5 L7.5,-38.1 L15.0,-33.9 L14.3,-25.9 L21.8,-20.8 L30.0,-21.8 L34.6,-14.3 L29.5,-7.9 Z" />
-      <circle r="15" fill="none" stroke="#8c4a32" stroke-width="6" />
-      <circle r="8" fill="url(#steel-blue)" stroke="#4a5d75" stroke-width="1" />
-      <circle r="4" fill="#d4a06f" />
-    </symbol>
+      <circle cx="400" cy="130" r="26" fill="#ffffff" stroke="#B08D2F" stroke-width="3"/>
+    </g>
 
-    <linearGradient id="brass-bright" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f4e4a0" />
-      <stop offset="50%" stop-color="#d4af37" />
-      <stop offset="100%" stop-color="#b08d2f" />
-    </linearGradient>
-    <linearGradient id="copper-bright" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#fabe9a" />
-      <stop offset="50%" stop-color="#d4a06f" />
-      <stop offset="100%" stop-color="#a06040" />
-    </linearGradient>
-    <linearGradient id="steel-blue" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#708ca8" />
-      <stop offset="50%" stop-color="#466485" />
-      <stop offset="100%" stop-color="#2a3c50" />
-    </linearGradient>
-
-    <filter id="metallic-sheen">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
-      <feSpecularLighting in="blur" surfaceScale="3" specularConstant="0.8" specularExponent="30" lighting-color="#ffffff" result="spec">
-        <fePointLight x="-200" y="-200" z="400"/>
-      </feSpecularLighting>
-      <feComposite in="spec" in2="SourceAlpha" operator="in" result="spec"/>
-      <feComposite in="SourceGraphic" in2="spec" operator="arithmetic" k1="0" k2="1" k3="0.7" k4="0"/>
-    </filter>
-    <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
-    </filter>
-
-    <style>
-      .url-button { transition: all 0.3s ease; cursor: pointer; }
-      .url-button rect { fill: #466485; stroke: #2a3c50; }
-      .url-button text { fill: #fff; }
-      .url-button:hover rect { fill: #5a7da0; stroke: #466485; }
-      .url-button:hover { transform: translateY(-2px); filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2)); }
-    </style>
+    <mask id="textReveal">
+      <rect width="800" height="300" fill="black"/>
+      <rect x="0" y="0" width="0" height="300" fill="white">
+        <animate attributeName="width" from="0" to="800" dur="1.4s" begin="0.5s" fill="freeze"/>
+      </rect>
+    </mask>
   </defs>
 
-  <rect width="800" height="350" fill="#f8f9fa" />
-  <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
-    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#d0d4d8" stroke-width="0.5"/>
-  </pattern>
-  <rect width="800" height="350" fill="url(#grid-pattern)" />
-  <g fill="none" stroke="#b0b4b8" stroke-width="0.5" opacity="0.6">
-      <circle cx="200" cy="175" r="150" stroke-dasharray="4,6" />
-      <circle cx="600" cy="175" r="100" stroke-dasharray="2,4" />
-      <path d="M50,300 Q100,330 150,300 T250,300" />
-      <text x="650" y="50" font-family="monospace" font-size="10" fill="#b0b4b8" stroke="none">N1/N2 = D2/D1 = ω2/ω1</text>
-  </g>
+  <rect width="800" height="300" fill="#ffffff"/>
 
-  <g filter="url(#soft-shadow)">
-      <g transform="translate(200, 175)" filter="url(#metallic-sheen)">
-        <use href="#gear-precise-24" width="140" height="140" x="-70" y="-70">
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite" />
-        </use>
-      </g>
+  <use href="#gear" opacity="0.55">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 400 130"
+      to="360 400 130"
+      dur="26s"
+      repeatCount="indefinite"/>
+  </use>
 
-      <g transform="translate(290, 175)" filter="url(#metallic-sheen)">
-        <use href="#gear-precise-12" width="70" height="70" x="-35" y="-35">
-          <animateTransform attributeName="transform" type="rotate" from="15 0 0" to="-345 0 0" dur="15s" repeatCount="indefinite" />
-        </use>
-      </g>
-  </g>
+  <!-- 名前 -->
+  <text x="400" y="120"
+        text-anchor="middle"
+        font-size="54"
+        font-family="Georgia, 'Times New Roman', serif"
+        fill="#1E1E1E"
+        letter-spacing="3"
+        mask="url(#textReveal)">
+    YUTO TSURU
+  </text>
 
-  <g transform="translate(400, 175)" filter="url(#soft-shadow)">
-    <rect x="-150" y="-70" width="300" height="140" rx="8" fill="#fcfcfc" stroke="url(#brass-bright)" stroke-width="3" />
-    <rect x="-145" y="-65" width="290" height="130" rx="6" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <!-- サブタイトル -->
+  <text x="400" y="165"
+        text-anchor="middle"
+        font-size="20"
+        font-family="monospace"
+        fill="#444444"
+        letter-spacing="2"
+        mask="url(#textReveal)">
+    Student Engineer
+  </text>
 
-    <g fill="#3a2e1e" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-        <text x="0" y="-15" font-size="38" font-weight="bold" letter-spacing="3" filter="url(#metallic-sheen)" opacity="0.9">
-        YUTO TSURU
-        </text>
-        <text x="0" y="20" font-size="16" font-family="monospace" letter-spacing="2" opacity="0.7" font-weight="bold">
-        STUDENT ENGINEER
-        </text>
-    </g>
-    
-    <circle cx="-135" cy="-55" r="4" fill="url(#brass-bright)" filter="url(#metallic-sheen)" />
-    <circle cx="135" cy="-55" r="4" fill="url(#brass-bright)" filter="url(#metallic-sheen)" />
-    <circle cx="-135" cy="55" r="4" fill="url(#brass-bright)" filter="url(#metallic-sheen)" />
-    <circle cx="135" cy="55" r="4" fill="url(#brass-bright)" filter="url(#metallic-sheen)" />
+  <!-- URL -->
+  <text x="400" y="205"
+        text-anchor="middle"
+        font-size="18"
+        font-family="monospace"
+        fill="#1E1E1E"
+        letter-spacing="1.5"
+        mask="url(#textReveal)">
+    tbnforge.com
+  </text>
 
-    <a href="https://tbnforge.com" target="_blank">
-      <g class="url-button" transform="translate(0, 48)">
-        <rect x="-80" y="-12" width="160" height="24" rx="12" stroke-width="2" />
-        <text x="0" y="5" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="1" text-anchor="middle">
-          tbnforge.com ↗
-        </text>
-      </g>
-    </a>
-  </g>
+  <!-- アクセントライン -->
+  <line x1="330" y1="215" x2="470" y2="215"
+        stroke="#B08D2F"
+        stroke-width="2"
+        opacity="0.8"/>
 
 </svg>
