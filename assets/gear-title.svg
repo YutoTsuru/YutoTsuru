@@ -1,45 +1,87 @@
-<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <g id="gear">
-      <circle cx="400" cy="110" r="78" fill="#1a1a1a"/>
-      <circle cx="400" cy="110" r="62" fill="none" stroke="#8c7a55" stroke-width="6"/>
+      <circle cx="400" cy="130" r="92" fill="none" stroke="#B08D2F" stroke-width="6"/>
+      <circle cx="400" cy="130" r="72" fill="none" stroke="#B08D2F" stroke-width="4"/>
 
-      <g fill="#8c7a55">
-        <rect x="396" y="12" width="8" height="18"/>
-        <rect x="396" y="190" width="8" height="18"/>
-        <rect x="292" y="106" width="18" height="8"/>
-        <rect x="490" y="106" width="18" height="8"/>
+      <g fill="#B08D2F">
+        <rect x="396" y="10" width="8" height="20"/>
+        <rect x="396" y="230" width="8" height="20"/>
+        <rect x="276" y="126" width="20" height="8"/>
+        <rect x="504" y="126" width="20" height="8"/>
 
-        <rect x="330" y="32" width="10" height="16" transform="rotate(-45 335 40)"/>
-        <rect x="460" y="32" width="10" height="16" transform="rotate(45 465 40)"/>
-        <rect x="330" y="172" width="10" height="16" transform="rotate(45 335 180)"/>
-        <rect x="460" y="172" width="10" height="16" transform="rotate(-45 465 180)"/>
+        <rect x="330" y="32" width="10" height="20" transform="rotate(-45 335 42)"/>
+        <rect x="460" y="32" width="10" height="20" transform="rotate(45 465 42)"/>
+        <rect x="330" y="208" width="10" height="20" transform="rotate(45 335 218)"/>
+        <rect x="460" y="208" width="10" height="20" transform="rotate(-45 465 218)"/>
       </g>
 
-      <circle cx="400" cy="110" r="20" fill="#0a0a0a" stroke="#6e5a35" stroke-width="4"/>
+      <circle cx="400" cy="130" r="26" fill="#ffffff" stroke="#B08D2F" stroke-width="3"/>
     </g>
+
+    <mask id="textReveal">
+      <rect width="800" height="260" fill="black"/>
+      <rect x="0" y="0" width="0" height="260" fill="white">
+        <animate attributeName="width" from="0" to="800" dur="1.4s" begin="0.5s" fill="freeze"/>
+      </rect>
+    </mask>
   </defs>
 
-  <rect width="800" height="220" fill="#0a0a0a"/>
+  <rect width="800" height="260" fill="#ffffff"/>
 
-  <use href="#gear">
+  <use href="#gear" opacity="0.45">
     <animateTransform
       attributeName="transform"
       type="rotate"
-      from="0 400 110"
-      to="360 400 110"
-      dur="18s"
+      from="0 400 130"
+      to="360 400 130"
+      dur="26s"
       repeatCount="indefinite"/>
   </use>
 
   <text
-    x="400"
-    y="132"
+    x="402"
+    y="122"
     text-anchor="middle"
-    font-size="46"
-    font-family="monospace"
-    fill="#e0c48f"
-    letter-spacing="3">
+    font-size="54"
+    font-family="Georgia, 'Times New Roman', serif"
+    fill="#000000"
+    opacity="0.15">
     YUTO TSURU
+  </text>
+
+  <text
+    x="400"
+    y="120"
+    text-anchor="middle"
+    font-size="54"
+    font-family="Georgia, 'Times New Roman', serif"
+    fill="#111111"
+    letter-spacing="3"
+    mask="url(#textReveal)">
+    YUTO TSURU
+  </text>
+
+  <text
+    x="401"
+    y="167"
+    text-anchor="middle"
+    font-size="20"
+    font-family="monospace"
+    fill="#000000"
+    opacity="0.12">
+    Student Engineer
+  </text>
+
+  <text
+    x="400"
+    y="165"
+    text-anchor="middle"
+    font-size="20"
+    font-family="monospace"
+    fill="#222222"
+    letter-spacing="2"
+    mask="url(#textReveal)">
+    Student Engineer
   </text>
 </svg>
