@@ -3,6 +3,7 @@
     <img src="./assets/gear-title.svg" />
   </a>
 </p>
+
 ## 🚀 Tech Stack
 
 ### 🧠 AI / Data
